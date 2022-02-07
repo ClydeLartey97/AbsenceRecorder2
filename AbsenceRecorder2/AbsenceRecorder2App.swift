@@ -8,10 +8,11 @@
 import SwiftUI
 
 @main
-struct AbsenceRecorder2App: App {
+struct AbsenceRecorderApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootTabView()
+                .environmentObject(StateController())
         }
     }
 }
